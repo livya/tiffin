@@ -1,0 +1,320 @@
+html
+  head
+    title
+      | Dabbawala Service
+    // fonts
+    link(href='http://fonts.googleapis.com/css?family=Lato:100,300,400,700,900,100italic,300italic,400italic,700italic,900italic', rel='stylesheet', type='text/css')
+    link(href='http://fonts.googleapis.com/css?family=Slabo+27px', rel='stylesheet', type='text/css')
+    link(href='http://fonts.googleapis.com/css?family=Roboto+Slab:400,100,300,700', rel='stylesheet', type='text/css')
+    // //fonts
+    link(href='css/bootstrap.css', rel='stylesheet')
+    link(href='css/style.css', rel='stylesheet', type='text/css', media='all')
+    // for-mobile-apps
+    meta(name='viewport', content='width=device-width, initial-scale=1')
+    meta(http-equiv='Content-Type', content='text/html; charset=utf-8')
+    meta(name='keywords', content='Favorites Responsive web template, Bootstrap Web Templates, Flat Web Templates, Andriod Compatible web template, \
+    Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, SonyErricsson, Motorola web design')
+    script(type='application/x-javascript').
+      addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); }
+    // //for-mobile-apps
+    // js
+    script(type='text/javascript', src='js/jquery.min.js')
+    // js
+    // start-smoth-scrolling
+    script(type='text/javascript', src='js/move-top.js')
+    script(type='text/javascript', src='js/easing.js')
+    script(type='text/javascript').
+      jQuery(document).ready(function($) {
+      $(".scroll").click(function(event){
+      event.preventDefault();
+      $('html,body').animate({scrollTop:$(this.hash).offset().top},1000);
+      });
+      });
+    // start-smoth-scrolling
+  body
+    // header
+    .header
+      .container
+        .top-header
+          .header-left
+            p Dabbawala Service
+          .login-section
+            ul
+              li
+                a(href='/login') Login
+              |  |
+              li
+                a(href='/register') Register
+          
+            
+          .clearfix
+    // //header
+    // banner
+    .banner-slider
+      .banner-pos
+        // responsiveslides
+        script(src='js/responsiveslides.min.js')
+        script.
+          // You can also use "$(window).load(function() {"
+          $(function () {
+          // Slideshow 4
+          $("#slider3").responsiveSlides({
+          auto: true,
+          pager: false,
+          nav: false,
+          speed: 500,
+          namespace: "callbacks",
+          before: function () {
+          $('.events').append("<li>before event fired.</li>");
+          },
+          after: function () {
+          $('.events').append("<li>after event fired.</li>");
+          }
+          });
+          });
+        // responsiveslides
+        #top.callbacks_container
+          ul#slider3.rslides
+            li
+              .banner.one
+                .container
+                  .navigation.text-center
+                    span.menu
+                      img(src='images/menu.png', alt='')
+                    ul.nav1
+                      li
+                        a.active(href='/') HOME
+                      li
+                        a(href='/about') ABOUT
+                      li
+                        a(href='/ourmenu') OUR MENU
+                      li
+                        a(href='/gallery') GALLERY
+                      li
+                        a(href='/contact') CONTACT
+                      .clearfix
+                  // point burst circle
+                  .logo
+                    a(href='/')
+                      .burst-36
+                        div
+                          div
+                            span
+                              img(src='images/logo.png', alt='')
+                      h1  DABBAWALA
+                  // //point burst circle
+                  .banner-info.text-center
+                    p Spicy , Tasty & Delicious Always!!
+                    .order
+                      a(href='/login') ORDER US NOW
+           
+      .clearfix
+      // banner-bottom
+      .banner-bottom
+        .container
+          .bottom-grids
+            .col-md-4.bottom-grid.text-center
+              .btm-clr
+                figure.icon
+                  img(src='images/k1.png', alt='')
+                h3 New Dishes
+                p
+                  | Low Calorie Cookies
+                  | Low Calorie Cookies Available all over India
+                  | NUTRITION FACTS
+                  | Kcal  Fat Course  Proteins 
+                  | 510 23.92g  Snack 5.63g
+                  | PLAN PRICE
+                  | One Time  Rs150
+                  | Availability: In stock.
+
+            .col-md-4.bottom-grid.btm-gre.text-center
+              .btm-clr
+                figure.icon
+                  img(src='images/k2.png', alt='')
+                h3 Popular
+                p
+                  | The Intelligent Munch Box 
+                  | A Balanced Snack with the essential nutrients in the form of millet's, whole grain cereals and fruit & nut combination
+                  | Shipping all over India. Shipping time 7-10 days.
+                  | NUTRITION FACTS
+                  | Kcal  Fat Course  Proteins  Vitamins
+                  | 450 10g Snack 16g A, C, B3, B5 , B6
+                  | PLAN PRICE
+                  | Weekly  Rs449
+                  | Availability: In stock.
+
+            .col-md-4.bottom-grid.text-center
+              .btm-clr
+                figure.icon
+                  img(src='images/k3.png', alt='')
+                h3 Special Offer
+                p
+                | High Calorie Snacks like Dry Fruits & Nuts ,Energy Bars Vitamin & Mineral enriched drink.
+                | Shipping all over India. Shipping time 7-10 days.
+                | NUTRITION FACTS
+                | Kcal  Fat Course  Proteins  Vitamins
+                | 600 10g Snack 22g A, C, B3, B5 , B6 ,D3
+                | PLAN PRICE
+                | Weekly  Rs549
+                | Availability: In stock.
+
+
+            .clearfix
+      // //banner-bottom
+    // //banner
+    // welcome
+    .welcome
+      .container
+        .wel-info
+          br 
+          br
+          h3 WELCOME
+          .strip-line
+          p
+             | Welcome to the world of advanced nutrition, with a seamless blend of functional ingredients to boost your health in a balanced and delicious tiffin box. We provide high quality nutritious, calorie defined meal plans with specially designed meals to suit your health and wellness requirements..
+
+        .welcome-grids
+          .col-md-4.welcome-grid-img
+            img(src='images/pic10.jpg', alt='')
+            .wel-pos
+              h4 FRUIT SALAD
+          .col-md-4.welcome-grid
+            .welcome-gd.second
+              h4 FRUIT SALAD 
+              p
+                | Fruit salad is a dish consisting of various kinds of fruit, sometimes served in a liquid, either in their own juices or a syrup. When served as an appetizer or as a dessert, a fruit salad is sometimes known as a fruit cocktail or fruit cup..
+
+          .col-md-4.welcome-grid-img
+            img(src='images/pic11.jpg', alt='')
+            .wel-pos
+              h4 CARROT EGG
+          .col-md-4.welcome-grid
+            .welcome-gd.second
+              h4 CARROT EGG
+              p
+                | This is a variation of the traditional Chinese carrots and eggs stir-fry dish. You probably won’t have come across this at any Chinese restaurants because it’s more of a home-made dish. We’ve modified the dish by using a traditional Western scrambled egg as the topping and adding in zucchinis to the carrots...
+
+          .col-md-4.welcome-grid-img
+            img(src='images/pic2.jpg', alt='')
+            .wel-pos
+              h4 SPECIAL PRAWNS
+          .col-md-4.welcome-grid
+            .welcome-gd.second
+              h4  SPECIAL PRAWNS
+              p
+                | From garlic prawns, to prawn cocktails and canapés, we have all the prawn recipes you need to "throw another shrimp on the barbie"!.
+
+          .clearfix
+    // //welcome
+    // good
+    .good
+      .container
+        .good-info
+          h3 FINE DESERTS
+          .strip-line
+        .good-grids
+          .col-md-5.good-right
+            img(src='images/pic12.jpg', alt='')
+            .desc
+              p DESERT
+          .col-md-7.good-left
+            h3 GOOD FOOD KEEPS YOU HEALTHY
+            .strip
+            p
+              | At Dabbawala’s Fine Desserts our goal is to provide you - our foodservice and in-store bakery customers - with innovative, exciting, indulgent and high quality desserts that will inspire you and your customers. We promise to honor the strong heritage of our brands, by working with you - as your trusted partner - in the creation of delicious, memorable, and inspiring culinary solutions that will help you build your business.
+          .clearfix
+    // //good
+    // delicious
+    .delicious
+      .container
+        .delicious-info
+          h3 DELICIOUS FOOD FOR ALL TASTES
+          .strip-line
+        .delicious-grids
+          .col-md-3.delicious-grid
+            h3 PASTA SPECIAL
+            img(src='images/g3.jpg', alt='')
+          
+          .col-md-3.delicious-grid
+            h3 FRIED CHICKEN
+            img(src='images/g6.jpg', alt='')
+          
+          .col-md-3.delicious-grid
+            h3 SAUSAGES
+            img(src='images/g5.jpg', alt='')
+        
+          .col-md-3.delicious-grid
+            h3 BREAD SLICE
+            img(src='images/g1.jpg', alt='')
+            
+          .clearfix
+    // //delicious
+    // footer-top
+    .footer-top
+      .container
+        .col-md-3.footer-grid
+          h3
+            a(href='#') Dabbawala
+        .col-md-3.footer-grid
+          h4 BUFFET
+          p
+            | MONDAY - THURSDAY
+            span 7 : 00 - 21 : 00
+        .col-md-3.footer-grid
+          h4 ORDERS
+          p
+            | MONDAY - SUNDAY
+            span 7 : 00 - 21 : 00
+        .col-md-3.footer-grid
+          h4 ADDRESS
+          ul Flowers Street,Andheri.
+            li.list-one 
+            li.list-two
+              a(href='mailto:info@example.com') Dabbawala@gmail.com
+            li.list-three +8 800 555 555 55
+        .clearfix
+    // //footer-top
+    // footer
+    .footer
+      .container
+        .footer-left
+          p
+            | © Dabbawala Service
+        .footer-right
+          ul
+            li
+              a.twitter(href='#')  
+            li
+              a.facebook(href='#')  
+            li
+              a.chrome(href='#')  
+            li
+              a.pinterest(href='#')  
+            li
+              a.linkedin(href='#')  
+            li
+              a.dribbble(href='#')  
+        .clearfix
+    // //footer
+    // smooth scrolling
+    script(type='text/javascript').
+      $(document).ready(function() {
+      /*
+      var defaults = {
+      containerID: 'toTop', // fading element id
+      containerHoverID: 'toTopHover', // fading element hover id
+      scrollSpeed: 1200,
+      easingType: 'linear'
+      };
+      */
+      $().UItoTop({ easingType: 'easeOutQuart' });
+      });
+    a#toTop(href='#', style='display: block;')
+      span#toTopHover(style='opacity: 1;')  
+    // //smooth scrolling
+
+    script(type="text/javascript", src="/vendor/jquery/dist/jquery.js")
+    script(type="text/javascript", src="/vendor/bootstrap/dist/js/bootstrap.js")
+    script(type="text/javascript", src="/vendor/toastr/toastr.min.js")
+

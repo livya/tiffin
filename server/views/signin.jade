@@ -1,0 +1,44 @@
+html(lang='en')
+	head
+		meta(charset='utf-8')
+		meta(http-equiv='X-UA-Compatible', content='IE=edge')
+		meta(name='viewport', content='width=device-width, initial-scale=1')
+		title Jade
+		link(href='/vendor/bootstrap/dist/css/bootstrap.min.css', rel='stylesheet')
+		link(href="/favicon.ico", rel="shortcut icon", type="image/x-icon")
+		link(href="/vendor/toastr/toastr.min.css" rel="stylesheet")  
+		link(href="/css/main.css" rel="stylesheet")  
+	body
+		header
+			nav.navbar.navbar-inverse.navbar-fixed-top
+				.container-fluid
+					.navbar-header
+						button.navbar-toggle.collapsed(type='button', data-toggle='collapse', data-target='#bs-example-navbar-collapse-1', aria-expanded='false')
+						span.sr-only Toggle navigation         
+						span.icon-bar         
+						span.icon-bar
+						span.icon-bar
+						a.navbar-brand(href='/') Dabbawala Service
+					#bs-example-navbar-collapse-1.collapse.navbar-collapse
+						ul.navbar-right
+							li
+								a(href='/signout') Sign Out  
+		.container
+			.row
+				.col-md-6.col-md-offset-4
+						
+					form(action='/checkin' method='post')
+						input.form-control(type='' placeholder='Enter tiffin code' name="tiffinBarcode")
+						input.form-control(type='' placeholder='Enter bag code' name="bagBarcode")
+
+						button.a(href='/checkin') Check In
+
+					form(action='/checkout' method='post')
+						input.form-control(type='' placeholder='Enter tiffin code' name="tiffinBarcode")
+						input.form-control(type='' placeholder='Enter bag code' name="bagBarcode")
+	
+						button.a(class='button' href='/checkout') Check Out
+
+		script(type="text/javascript", src="/vendor/jquery/dist/jquery.js")
+		script(type="text/javascript", src="/vendor/bootstrap/dist/js/bootstrap.js")
+		script(type="text/javascript", src="/vendor/toastr/toastr.min.js")

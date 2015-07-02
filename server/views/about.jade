@@ -1,0 +1,239 @@
+html
+  head
+    title
+      | Favorites a Hotels and Restaurants Category Flat Bootstrap Responsive Website Template | About :: w3layouts
+    // fonts
+    link(href='http://fonts.googleapis.com/css?family=Lato:100,300,400,700,900,100italic,300italic,400italic,700italic,900italic', rel='stylesheet', type='text/css')
+    link(href='http://fonts.googleapis.com/css?family=Slabo+27px', rel='stylesheet', type='text/css')
+    link(href='http://fonts.googleapis.com/css?family=Roboto+Slab:400,100,300,700', rel='stylesheet', type='text/css')
+    // //fonts
+    link(href='css/bootstrap.css', rel='stylesheet')
+    link(href='css/style.css', rel='stylesheet', type='text/css', media='all')
+    // for-mobile-apps
+    meta(name='viewport', content='width=device-width, initial-scale=1')
+    meta(http-equiv='Content-Type', content='text/html; charset=utf-8')
+    meta(name='keywords', content='Favorites Responsive web template, Bootstrap Web Templates, Flat Web Templates, Andriod Compatible web template, \
+    Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, SonyErricsson, Motorola web design')
+    script(type='application/x-javascript').
+      addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); }
+    // //for-mobile-apps
+    // js
+    script(type='text/javascript', src='js/jquery.min.js')
+    // js
+   
+    // start-smoth-scrolling
+    script(type='text/javascript', src='js/move-top.js')
+    script(type='text/javascript', src='js/easing.js')
+    script(type='text/javascript').
+      jQuery(document).ready(function($) {
+      $(".scroll").click(function(event){
+      event.preventDefault();
+      $('html,body').animate({scrollTop:$(this.hash).offset().top},1000);
+      });
+      });
+    // start-smoth-scrolling
+  body
+    // header
+    .header
+      .container
+        .top-header
+          .header-left
+            p Dabbawala Service
+          .login-section
+            ul
+              li
+                a(href='/login') Login
+              |  |
+
+              li
+                a(href='/register') Register
+          
+          
+          .clearfix
+    // //header
+    // banner
+    .banner-slider
+      .banner-pos
+        .banner.one.page-head
+          .container
+            .navigation.text-center
+              span.menu
+                img(src='images/menu.png', alt='')
+              ul.nav1
+                li
+                  a(href='/') HOME
+                li
+                  a.active(href='/about') ABOUT
+                li
+                  a(href='/ourmenu') OUR MENU
+                li
+                  a(href='/gallery') GALLERY
+                li
+                  a(href='/contact') CONTACT
+                .clearfix
+              // script for menu
+              script.
+                $( "span.menu" ).click(function() {
+                $( "ul.nav1" ).slideToggle( 300, function() {
+                // Animation complete.
+                });
+                });
+              // //script for menu
+            // point burst circle
+            .logo
+              a(href='/')
+                .burst-36
+                  div
+                    div
+                      span
+                        img(src='images/logo.png', alt='')
+                h1 DABBAWALA 
+            // //point burst circle
+    // //banner
+    // about-page
+    .about-page
+      .container
+        .about-info
+          h3 ABOUT
+          .strip-line.st-border
+        .about-grids
+          .col-md-7.about-grid
+            h4 A FEW WORDS ABOUT US
+            p
+              | Welcome to the world of advanced nutrition, with a seamless blend of functional ingredients to boost your health in a balanced and delicious tiffin box. We provide high quality nutritious, calorie defined meal plans with specially designed meals to suit your health and wellness requirements.
+              | The Dabbawala Service meals are packed in world class packaging material, quality assured on European Standards and delivered fresh to our customer’s doorstep. The contamination proof packaging is done under high quality assurance standards based on the HACCP standards in our kitchens.
+              | Treat yourself to some TLC…Therapeutic Lifestyle Changes to achieve better health and wellness; and at the same time enjoy the pleasure of eating healthy and tasty meals. Our product is made by a team of food and nutrition scientists, expert chefs; delivered by our supply chain experts all set along the robust tenets of precise design.  Enjoy the harmonious balance of nutrients and taste; which help keep your blood sugar under control, develop better immunity, have a healthier heart, help children grow better and achieve optimum nutrition through the Dabbawala Service meal boxes.
+              | Healthy combination of fibre, judicious blend of nutrients and taste with the superior benefits of low fat food cooked exclusively in olive oil, is the pleasures of advanced nutrition promised by Dabbawala Service..
+
+            
+          .col-md-5.about-grid
+            img(src='images/g4.jpg', alt='')
+          .clearfix
+    // test
+    .testimonial
+      .container
+        // responsiveslides
+        script(src='js/responsiveslides.min.js')
+        script.
+          // You can also use "$(window).load(function() {"
+          $(function () {
+          // Slideshow 4
+          $("#slider4").responsiveSlides({
+          auto: true,
+          pager: false,
+          nav: false,
+          speed: 500,
+          namespace: "callbacks",
+          before: function () {
+          $('.events').append("<li>before event fired.</li>");
+          },
+          after: function () {
+          $('.events').append("<li>after event fired.</li>");
+          }
+          });
+          });
+        // responsiveslides
+        #top.callbacks_container
+          ul#slider4.rslides
+            li
+              .testm-info
+                h3 TESTIMONIAL
+                p
+                  | I ordered this munch box and they weere very quickin sending. I received the packet the third day. the presentationa and contents are very good though off and presented. i liked the coockies, granola bar and drink (kokum in all packets). But the main snack which are various type of roasted namkeens need to be improved. Innovation, taste and variety lacking there. Please improve that as it is the biggest part of the package. Will order again once that part is changed. Till then will order only granola bars. Also these should be made in house rather that outsourcing to other manufacturers. (Posted on 6/1/2015).
+
+                img(src='images/6.png', alt='')
+                h4
+                  | JOHN DOE 
+                  span Client
+            li
+              .testm-info
+                h3 TESTIMONIAL
+                p
+                  | Thanks Dabbawala Service for giving healty with tasty munck box.
+                  | I m really feeling happy and refresh after taking this kind of food.Really awesome food............
+                  | (Posted on 4/2/2015).
+
+                img(src='images/7.png', alt='')
+                h4
+                  | WILSON 
+                  span Client
+            li
+              .testm-info
+                h3 TESTIMONIAL
+                p
+                  | This is one of my favorite snack boxes. You can easily take these boxes to work, on a picnic, when you hike or if you need a snack in your car. Delicious and convenient! (Posted on 4/2/2015)
+                  | .
+                img(src='images/8.png', alt='')
+                h4
+                  | JAMES 
+                  span Client
+    // //test
+    
+    // footer-top
+    .footer-top
+      .container
+        .col-md-3.footer-grid
+          h3
+            a(href='#') Dabbawala
+        .col-md-3.footer-grid
+          h4 BUFFET
+          p
+            | MONDAY - THURSDAY
+            span 7 : 00 - 21 : 00
+        .col-md-3.footer-grid
+          h4 ORDERS
+          p
+            | MONDAY - SUNDAY
+            span 7 : 00 - 21 : 00
+        .col-md-3.footer-grid
+          h4 ADDRESS
+          ul Flowers Street,Andheri.
+            li.list-one 
+            li.list-two
+              a(href='mailto:info@example.com') Dabbawala@gmail.com
+            li.list-three +8 800 555 555 55
+        .clearfix
+    // //footer-top
+    // footer
+    .footer
+      .container
+        .footer-left
+          p
+            | © Dabbawala Services
+        .footer-right
+          ul
+            li
+              a.twitter(href='#')  
+            li
+              a.facebook(href='#')  
+            li
+              a.chrome(href='#')  
+            li
+              a.pinterest(href='#')  
+            li
+              a.linkedin(href='#')  
+            li
+              a.dribbble(href='#')  
+        .clearfix
+    // //footer
+    // smooth scrolling
+    script(type='text/javascript').
+      $(document).ready(function() {
+      /*
+      var defaults = {
+      containerID: 'toTop', // fading element id
+      containerHoverID: 'toTopHover', // fading element hover id
+      scrollSpeed: 1200,
+      easingType: 'linear'
+      };
+      */
+      $().UItoTop({ easingType: 'easeOutQuart' });
+      });
+    a#toTop(href='#', style='display: block;')
+      span#toTopHover(style='opacity: 1;')  
+    // //smooth scrolling
+
+    script(type="text/javascript", src="/vendor/jquery/dist/jquery.js")
+    script(type="text/javascript", src="/vendor/bootstrap/dist/js/bootstrap.js")
+    script(type="text/javascript", src="/vendor/toastr/toastr.min.js")
+

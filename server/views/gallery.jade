@@ -1,0 +1,219 @@
+html
+  head
+    title
+      | Dabbawala Service
+    // fonts
+    link(href='http://fonts.googleapis.com/css?family=Lato:100,300,400,700,900,100italic,300italic,400italic,700italic,900italic', rel='stylesheet', type='text/css')
+    link(href='http://fonts.googleapis.com/css?family=Slabo+27px', rel='stylesheet', type='text/css')
+    link(href='http://fonts.googleapis.com/css?family=Roboto+Slab:400,100,300,700', rel='stylesheet', type='text/css')
+    // //fonts
+    link(href='css/bootstrap.css', rel='stylesheet')
+    link(href='css/style.css', rel='stylesheet', type='text/css', media='all')
+    // for-mobile-apps
+    meta(name='viewport', content='width=device-width, initial-scale=1')
+    meta(http-equiv='Content-Type', content='text/html; charset=utf-8')
+    meta(name='keywords', content='Favorites Responsive web template, Bootstrap Web Templates, Flat Web Templates, Andriod Compatible web template, \
+    Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, SonyErricsson, Motorola web design')
+    script(type='application/x-javascript').
+      addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); }
+    // //for-mobile-apps
+    // js
+    script(type='text/javascript', src='js/jquery.min.js')
+    // js
+    
+    // start-smoth-scrolling
+    script(type='text/javascript', src='js/move-top.js')
+    script(type='text/javascript', src='js/easing.js')
+    script(type='text/javascript').
+      jQuery(document).ready(function($) {
+      $(".scroll").click(function(event){
+      event.preventDefault();
+      $('html,body').animate({scrollTop:$(this.hash).offset().top},1000);
+      });
+      });
+    // start-smoth-scrolling
+  body
+    // header
+    .header
+      .container
+        .top-header
+          .header-left
+            p Dabbawala Service
+          .login-section
+            ul
+              li
+                a(href='/login') Login
+              |  |
+              li
+                a(href='/register') Register
+          
+          
+          .clearfix
+    // //header
+    // banner
+    .banner-slider
+      .banner-pos
+        .banner.one.page-head
+          .container
+            .navigation.text-center
+              span.menu
+                img(src='images/menu.png', alt='')
+              ul.nav1
+                li
+                  a(href='/') HOME
+                li
+                  a(href='/about') ABOUT
+                li
+                  a(href='/ourmenu') OUR MENU
+                li
+                  a.active(href='/gallery') GALLERY
+                li
+                  a(href='/contact') CONTACT
+                .clearfix
+              // script for menu
+              script.
+                $( "span.menu" ).click(function() {
+                $( "ul.nav1" ).slideToggle( 300, function() {
+                // Animation complete.
+                });
+                });
+              // //script for menu
+            // point burst circle
+            .logo
+              a(href='/')
+                .burst-36
+                  div
+                    div
+                      span
+                        img(src='images/logo.png', alt='')
+                h1 DABBAWALA
+            // //point burst circle
+    // //banner
+    // gallery-page
+    .gallery
+      .container
+        .gallery-info
+          h3 GALLERY
+          .strip-line.st-border
+        .gallery-grids
+          .col-md-4.gallery-grid.gallery1
+            a.swipebox(href='images/k1.jpg')
+              img.img-responsive(src='images/k1.jpg', alt='/')
+              .textbox
+                p SPECIAL OFFER
+          .col-md-4.gallery-grid.gallery1
+            a.swipebox(href='images/k2.jpg')
+              img.img-responsive(src='images/k2.jpg', alt='/')
+              .textbox
+                p SPECIAL OFFER
+          .col-md-4.gallery-grid.gallery1
+            a.swipebox(href='images/k3.jpg')
+              img.img-responsive(src='images/k3.jpg', alt='/')
+              .textbox
+                p SPECIAL OFFER
+          .col-md-4.gallery-grid.gallery1
+            a.swipebox(href='images/k4.jpg')
+              img.img-responsive(src='images/k4.jpg', alt='/')
+              .textbox
+                p SPECIAL OFFER
+          .col-md-4.gallery-grid.gallery1
+            a.swipebox(href='images/k5.jpg')
+              img.img-responsive(src='images/k5.jpg', alt='/')
+              .textbox
+                p SPECIAL OFFER
+          .col-md-4.gallery-grid.gallery1
+            a.swipebox(href='images/k6.jpg')
+              img.img-responsive(src='images/k6.jpg', alt='/')
+              .textbox
+                p SPECIAL OFFER
+          .col-md-4.gallery-grid.gallery1
+            a.swipebox(href='images/k7.jpg')
+              img.img-responsive(src='images/k7.jpg', alt='/')
+              .textbox
+                p SPECIAL OFFER
+          .col-md-4.gallery-grid.gallery1
+            a.swipebox(href='images/k8.jpg')
+              img.img-responsive(src='images/k8.jpg', alt='/')
+              .textbox
+                p SPECIAL OFFER
+          .col-md-4.gallery-grid.gallery1
+            a.swipebox(href='images/k1.jpg')
+              img.img-responsive(src='images/k1.jpg', alt='/')
+              .textbox
+                p SPECIAL OFFER
+          .clearfix  
+        link(rel='stylesheet', href='css/swipebox.css')
+        script(src='js/jquery.swipebox.min.js')
+        script(type='text/javascript').
+          jQuery(function($) {
+          $(".swipebox").swipebox();
+          });
+    // //gallery-page
+    // footer-top
+    .footer-top
+      .container
+        .col-md-3.footer-grid
+          h3
+            a(href='#') Dabbawala
+        .col-md-3.footer-grid
+          h4 BUFFET
+          p
+            | MONDAY - THURSDAY
+            span 7 : 00 - 21 : 00
+        .col-md-3.footer-grid
+          h4 ORDERS
+          p
+            | MONDAY - SUNDAY
+            span 7 : 00 - 21 : 00
+        .col-md-3.footer-grid
+          h4 ADDRESS
+          ul Flowers Street,Andheri.
+            li.list-one 
+            li.list-two
+              a(href='mailto:info@example.com') Dabbawala@gmail.com
+            li.list-three +8 800 555 555 55
+        .clearfix
+    // //footer-top
+    // footer
+    .footer
+      .container
+        .footer-left
+          p
+            | © Dabbawala Service
+        .footer-right
+          ul
+            li
+              a.twitter(href='#')  
+            li
+              a.facebook(href='#')  
+            li
+              a.chrome(href='#')  
+            li
+              a.pinterest(href='#')  
+            li
+              a.linkedin(href='#')  
+            li
+              a.dribbble(href='#')  
+        .clearfix
+    // //footer
+    // smooth scrolling
+    script(type='text/javascript').
+      $(document).ready(function() {
+      /*
+      var defaults = {
+      containerID: 'toTop', // fading element id
+      containerHoverID: 'toTopHover', // fading element hover id
+      scrollSpeed: 1200,
+      easingType: 'linear'
+      };
+      */
+      $().UItoTop({ easingType: 'easeOutQuart' });
+      });
+    a#toTop(href='#', style='display: block;')
+      span#toTopHover(style='opacity: 1;')  
+    // //smooth scrolling
+
+    script(type="text/javascript", src="/vendor/jquery/dist/jquery.js")
+    script(type="text/javascript", src="/vendor/bootstrap/dist/js/bootstrap.js")
+    script(type="text/javascript", src="/vendor/toastr/toastr.min.js")
+

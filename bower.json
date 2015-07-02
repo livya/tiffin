@@ -1,0 +1,13 @@
+{
+  "name": "tiffin",
+  "version": "0.0.0",
+  "homepage": "https://github.com/CodeGurukul/Internship_Tiffin-Delivery-System",
+  "authors": [
+    "swarupasv <vaishampayan4@gmail.com>"
+  ],
+  "main": "server.js",
+  "license": "MIT",
+  "dependencies": {
+    "bootstrap": "~3.3.5"
+  }
+}
