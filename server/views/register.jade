@@ -46,6 +46,11 @@ html
               |  |
               li
                 a(href='/register') Register
+          .header-right
+            ul
+              li
+                a(href='/adlogin') Admin Login
+
           
           
           .clearfix
@@ -60,6 +65,8 @@ html
                 img(src='images/menu.png', alt='')
               ul.nav1
                 li
+                  p .
+                li
                   a(href='/') HOME
                 li
                   a(href='/about') ABOUT
@@ -67,8 +74,6 @@ html
                   a(href='/ourmenu') OUR MENU
                 li
                   a(href='/gallery') GALLERY
-                li
-                  a(href='/contact') CONTACT
                 .clearfix
               // script for menu
               script.
@@ -105,7 +110,7 @@ html
                 ul
                   li.text-info First Name: 
                   li
-                    input.form-control(type='' placeholder='First Name' name="firstname")
+                    input.form-control(type='' placeholder='First Name' name="firstname" required)
                 ul
                   li.text-info Last Name: 
                   li
@@ -113,30 +118,31 @@ html
                 ul
                   li.text-info Email: 
                   li
-                    input.form-control(type='email' placeholder='Email' name="email")
+                    input.form-control(type='email' placeholder='Email' name="email" required)
                 ul
                   li.text-info Password: 
                   li
-                    input.form-control(type='password' placeholder='Password' name="password")
+                    input.form-control(type='password' placeholder='Password' name="password" required)
                 ul
                   li.text-info Address:
                   li
-                    input.form-control(type='' placeholder='Address' name="address")
+                    input.form-control(type='' placeholder='Address' name="address" required)
                 ul
                   li.text-info Mobile Number:
                   li
-                    input.form-control(type='' placeholder='Mobile Number' name="mobile")
+                    input.form-control(type='' placeholder='Mobile Number' name="mobile" required)
                 input(type='submit', value='REGISTER NOW')
           .reg-right
             h3 Completely Free Account
             .strip
             p
-              | Pellentesque neque leo, dictum sit amet accumsan non, dignissim ac mauris. Mauris rhoncus, lectus tincidunt tempus aliquam, odio
-              | libero tincidunt metus, sed euismod elit enim ut mi. Nulla porttitor et dolor sed condimentum. Praesent porttitor lorem dui, in pulvinar enim rhoncus vitae. Curabitur tincidunt, turpis ac lobortis hendrerit, ex elit vestibulum est, at faucibus erat ligula non neque.
-            h3.lorem Lorem ipsum dolor.
+              | You can create an Account for free !!! 
+              br
+              | Just enter your details and make one now......
+            h3 Privacy Policy
             .strip
             p
-              | Tincidunt metus, sed euismod elit enim ut mi. Nulla porttitor et dolor sed condimentum. Praesent porttitor lorem dui, in pulvinar enim rhoncus vitae. Curabitur tincidunt, turpis ac lobortis hendrerit, ex elit vestibulum est, at faucibus erat ligula non neque.
+              | We don't use your data for any advertisement purposes.It is solely for user identification......
           .clearfix
     // registration-form
     // footer-top
@@ -145,17 +151,7 @@ html
         .col-md-3.footer-grid
           h3
             a(href='#') Dabbawala
-        .col-md-3.footer-grid
-          h4 BUFFET
-          p
-            | MONDAY - THURSDAY
-            span 7 : 00 - 21 : 00
-        .col-md-3.footer-grid
-          h4 ORDERS
-          p
-            | MONDAY - SUNDAY
-            span 7 : 00 - 21 : 00
-        .col-md-3.footer-grid
+        .col-md-3.footer-grid.footer-right
           h4 ADDRESS
           ul Flowers Street,Andheri.
             li.list-one 

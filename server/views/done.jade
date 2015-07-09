@@ -42,74 +42,24 @@ html
           .login-section
             ul
               li
-                a(href='/login') Login
-              |  |
-              li
-                a(href='/register') Register
-          .header-right
-            ul
-              li
-                a(href='/adlogin') Admin Login
-
+                a(href='/signout') Log Out
+                
+                  
+    .contact
+      .container
+        .contact-form
+          .contact-info
+            h3  THANK YOU FOR YOUR ORDER !!! 
+            br
+            h3  YOUR TIFFIN WILL REACH IN 45 MINUTES.....
             
-          .clearfix
-    // //header
-    // banner
-    .banner-slider
-      .banner-pos
-        .banner.one.page-head
-          .container
-            .navigation.text-center
-              span.menu
-                img(src='images/menu.png', alt='')
-              ul.nav1
-                li
-                  a(href='/') HOME
-                li
-                  a(href='/about') ABOUT
-                li
-                  a(href='/ourmenu') OUR MENU
-                li
-                  a(href='/gallery') GALLERY
-
-                .clearfix
-              // script for menu
-              script.
-                $( "span.menu" ).click(function() {
-                $( "ul.nav1" ).slideToggle( 300, function() {
-                // Animation complete.
-                });
-                });
-               //script for menu
-            //point burst circle
-            .logo
-              a(href='/index')
-                .burst-36
-                  div
-                    div
-                      span
-                        img(src='images/logo.png', alt='')
-                h1 DABBAWALA
-    
-              .clearfix
-    // //checkout
     // footer-top
     .footer-top
       .container
         .col-md-3.footer-grid
           h3
             a(href='#') Dabbawala
-        .col-md-3.footer-grid
-          h4 BUFFET
-          p
-            | MONDAY - THURSDAY
-            span 7 : 00 - 21 : 00
-        .col-md-3.footer-grid
-          h4 ORDERS
-          p
-            | MONDAY - SUNDAY
-            span 7 : 00 - 21 : 00
-        .col-md-3.footer-grid
+        .col-md-3.footer-grid.footer-right
           h4 ADDRESS
           ul Flowers Street,Andheri.
             li.list-one 

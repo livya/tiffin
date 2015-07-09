@@ -11,7 +11,7 @@ html
     link(href='css/style.css', rel='stylesheet', type='text/css', media='all')
     // for-mobile-apps
     meta(name='viewport', content='width=device-width, initial-scale=1')
-    meta(http-equiv='Content-Type', content='text/html; charset=utf-8')
+    meta(http-equiv='Content-Type')
     meta(name='keywords', content='Favorites Responsive web template, Bootstrap Web Templates, Flat Web Templates, Andriod Compatible web template, \
     Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, SonyErricsson, Motorola web design')
     script(type='application/x-javascript').
@@ -51,7 +51,8 @@ html
               li
                 a(href='/adlogin') Admin Login
 
-            
+          
+          
           .clearfix
     // //header
     // banner
@@ -64,6 +65,8 @@ html
                 img(src='images/menu.png', alt='')
               ul.nav1
                 li
+                  p .
+                li
                   a(href='/') HOME
                 li
                   a(href='/about') ABOUT
@@ -71,7 +74,6 @@ html
                   a(href='/ourmenu') OUR MENU
                 li
                   a(href='/gallery') GALLERY
-
                 .clearfix
               // script for menu
               script.
@@ -80,36 +82,29 @@ html
                 // Animation complete.
                 });
                 });
-               //script for menu
-            //point burst circle
+              // //script for menu
+            // point burst circle
             .logo
-              a(href='/index')
+              a(href='/')
                 .burst-36
                   div
                     div
                       span
                         img(src='images/logo.png', alt='')
                 h1 DABBAWALA
-    
-              .clearfix
-    // //checkout
+            // //point burst circle
+    // //banner
+    .container-fluid
+              .jumbotron
+                  h2 You have been successfully registered !!! 
+
     // footer-top
     .footer-top
       .container
         .col-md-3.footer-grid
           h3
             a(href='#') Dabbawala
-        .col-md-3.footer-grid
-          h4 BUFFET
-          p
-            | MONDAY - THURSDAY
-            span 7 : 00 - 21 : 00
-        .col-md-3.footer-grid
-          h4 ORDERS
-          p
-            | MONDAY - SUNDAY
-            span 7 : 00 - 21 : 00
-        .col-md-3.footer-grid
+        .col-md-3.footer-grid.footer-right
           h4 ADDRESS
           ul Flowers Street,Andheri.
             li.list-one 

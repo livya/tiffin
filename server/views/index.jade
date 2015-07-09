@@ -45,6 +45,12 @@ html
               |  |
               li
                 a(href='/register') Register
+              li
+                a(href='/sendmail') Send Mail
+          .header-right
+            ul
+              li
+                a(href='/adlogin') Admin Login
           
             
           .clearfix
@@ -83,6 +89,8 @@ html
                       img(src='images/menu.png', alt='')
                     ul.nav1
                       li
+                        p  .
+                      li
                         a.active(href='/') HOME
                       li
                         a(href='/about') ABOUT
@@ -90,8 +98,6 @@ html
                         a(href='/ourmenu') OUR MENU
                       li
                         a(href='/gallery') GALLERY
-                      li
-                        a(href='/contact') CONTACT
                       .clearfix
                   // point burst circle
                   .logo
@@ -105,6 +111,7 @@ html
                   // //point burst circle
                   .banner-info.text-center
                     p Spicy , Tasty & Delicious Always!!
+                    p Payment on delivery.....
                     .order
                       a(href='/login') ORDER US NOW
            
@@ -191,19 +198,19 @@ html
               h4 CARROT EGG
           .col-md-4.welcome-grid
             .welcome-gd.second
-              h4 CARROT EGG
+              h4  SPECIAL PRAWNS
               p
-                | This is a variation of the traditional Chinese carrots and eggs stir-fry dish. You probably won’t have come across this at any Chinese restaurants because it’s more of a home-made dish. We’ve modified the dish by using a traditional Western scrambled egg as the topping and adding in zucchinis to the carrots...
-
+                | From garlic prawns, to prawn cocktails and canapés, we have all the prawn recipes you need to "throw another shrimp on the barbie"!.
           .col-md-4.welcome-grid-img
             img(src='images/pic2.jpg', alt='')
             .wel-pos
               h4 SPECIAL PRAWNS
           .col-md-4.welcome-grid
             .welcome-gd.second
-              h4  SPECIAL PRAWNS
+              
+              h4 CARROT EGG
               p
-                | From garlic prawns, to prawn cocktails and canapés, we have all the prawn recipes you need to "throw another shrimp on the barbie"!.
+                | This is a variation of the traditional Chinese carrots and eggs stir-fry dish. You probably won’t have come across this at any Chinese restaurants because it’s more of a home-made dish. We’ve modified the dish by using a traditional Western scrambled egg as the topping and adding in zucchinis to the carrots...
 
           .clearfix
     // //welcome
@@ -253,20 +260,11 @@ html
     // footer-top
     .footer-top
       .container
-        .col-md-3.footer-grid
+        .col-md-6.footer-grid
           h3
             a(href='#') Dabbawala
-        .col-md-3.footer-grid
-          h4 BUFFET
-          p
-            | MONDAY - THURSDAY
-            span 7 : 00 - 21 : 00
-        .col-md-3.footer-grid
-          h4 ORDERS
-          p
-            | MONDAY - SUNDAY
-            span 7 : 00 - 21 : 00
-        .col-md-3.footer-grid
+        
+        .col-md-6.footer-grid.footer-right
           h4 ADDRESS
           ul Flowers Street,Andheri.
             li.list-one 

@@ -1,7 +1,7 @@
-html
+﻿html
   head
     title
-      | Favorites a Hotels and Restaurants Category Flat Bootstrap Responsive Website Template | Login :: w3layouts
+      | Dabbawala Service
     // fonts
     link(href='http://fonts.googleapis.com/css?family=Lato:100,300,400,700,900,100italic,300italic,400italic,700italic,900italic', rel='stylesheet', type='text/css')
     link(href='http://fonts.googleapis.com/css?family=Slabo+27px', rel='stylesheet', type='text/css')
@@ -46,6 +46,10 @@ html
               |  |
               li
                 a(href='/register') Register
+          .header-right
+            ul
+              li
+                a(href='/adlogin') Admin Login
           
           
           .clearfix
@@ -60,6 +64,8 @@ html
                 img(src='images/menu.png', alt='')
               ul.nav1
                 li
+                  p .
+                li
                   a(href='/') HOME
                 li
                   a(href='/about') ABOUT
@@ -67,8 +73,7 @@ html
                   a(href='/ourmenu') OUR MENU
                 li
                   a(href='/gallery') GALLERY
-                li
-                  a(href='/contact') CONTACT
+
                 .clearfix
               // script for menu
               script.
@@ -100,11 +105,11 @@ html
             form(action='/login' method='post')
               h5 Email:
               br
-              input.form-control(type='email' placeholder='Email' name="email")
+              input.form-control(type='email' placeholder='Email' name="email" required)
               br
               h5 Password:
               br
-              input.form-control(type='password' placeholder='Password' name="password")
+              input.form-control(type='password' placeholder='Password' name="password" required)
               br
               input(type='submit', value='LOGIN')
           .col-md-6.login-right
@@ -121,17 +126,7 @@ html
         .col-md-3.footer-grid
           h3
             a(href='#') Dabbawala
-        .col-md-3.footer-grid
-          h4 BUFFET
-          p
-            | MONDAY - THURSDAY
-            span 7 : 00 - 21 : 00
-        .col-md-3.footer-grid
-          h4 ORDERS
-          p
-            | MONDAY - SUNDAY
-            span 7 : 00 - 21 : 00
-        .col-md-3.footer-grid
+        .col-md-3.footer-grid.footer-right
           h4 ADDRESS
           ul Flowers Street,Andheri.
             li.list-one 

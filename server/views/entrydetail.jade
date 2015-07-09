@@ -41,10 +41,10 @@ html
           .login-section
             ul
               li
-                h3 #{user.email}
+                a(href='/login') Logout
               li
-                a(href='/signout') Signout
-          
+                -console.log(user);
+
             
           .clearfix
     // //header

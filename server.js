@@ -4,12 +4,15 @@ var bodyParser = require('body-parser');
 var passport = require('passport');
 var session = require('express-session');
 var MongoStore = require('connect-mongo')(session);
+var nodemailer = require("nodemailer");
+
 
 //Require Models
 var Tiffin = require('./server/models/Tiffin');
 var Checkout = require('./server/models/Checkout');
 var Checkin = require('./server/models/Checkin');
 var Contact = require('./server/models/Contact');
+var Admin = require('./server/models/Admin');
 
 
 
@@ -22,6 +25,14 @@ var userController = require('./server/controllers/user');
 
 
 var app =express();
+var smtpTransport = nodemailer.createTransport("SMTP",{
+service: "Gmail",
+auth: {
+user: "davidlivya@gmail.com",
+pass: "Your G-mail password"
+}
+});
+
 
 app.set('views', __dirname + '/server/views');
 app.set('view engine','jade');
@@ -53,8 +64,8 @@ app.get('/', homeController.getIndex);
 app.get('/signout', userController.getSignOut);
 app.get('/register', userController.getRegister);
 app.post('/register', userController.postSignUp);
-app.post('/login', userController.postLogin);
-app.get('/login', userController.getLogin);
+app.post('/adlogin', userController.postAdLogin);
+app.get('/adlogin', userController.getAdLogin);
 app.post('/checkin', userController.postCheckIn);
 app.post('/checkout', userController.postCheckOut);
 app.get('/home', userController.getHome);
@@ -64,8 +75,37 @@ app.get('/ourmenu', userController.getOurMenu);
 app.get('/gallery', userController.getGallery);
 app.get('/checkout', userController.getCheckout);
 app.get('/orders', userController.getOrders);
+app.post('/login', userController.postLogin);
+app.get('/login', userController.getLogin);
 app.post('/contact', userController.postContact);
 
+
+/*------------------SMTP Over-----------------------------*/
+
+/*------------------Routing Started ------------------------*/
+
+app.get('/sendmail',function(req,res){
+//res.sendFile('sendmail');
+res.sendFile(path.join(__dirname, '../views', 'sendmail'));
+
+});
+app.get('/sendmail',function(req,res){
+var mailOptions={
+to : req.query.to,
+subject : req.query.subject,
+text : req.query.text
+}
+console.log(mailOptions);
+smtpTransport.sendMail(mailOptions, function(error, response){
+if(error){
+console.log(error);
+res.end("error");
+}else{
+console.log("Message sent: " + response.message);
+res.end("sent");
+}
+});
+});
 
 
 

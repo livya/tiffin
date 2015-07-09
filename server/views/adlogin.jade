@@ -1,4 +1,4 @@
-html
+﻿html
   head
     title
       | Dabbawala Service
@@ -50,8 +50,8 @@ html
             ul
               li
                 a(href='/adlogin') Admin Login
-
-            
+          
+          
           .clearfix
     // //header
     // banner
@@ -64,6 +64,8 @@ html
                 img(src='images/menu.png', alt='')
               ul.nav1
                 li
+                  p .
+                li
                   a(href='/') HOME
                 li
                   a(href='/about') ABOUT
@@ -71,7 +73,6 @@ html
                   a(href='/ourmenu') OUR MENU
                 li
                   a(href='/gallery') GALLERY
-
                 .clearfix
               // script for menu
               script.
@@ -80,8 +81,8 @@ html
                 // Animation complete.
                 });
                 });
-               //script for menu
-            //point burst circle
+              // //script for menu
+            // point burst circle
             .logo
               a(href='/index')
                 .burst-36
@@ -90,26 +91,33 @@ html
                       span
                         img(src='images/logo.png', alt='')
                 h1 DABBAWALA
-    
-              .clearfix
-    // //checkout
+            // //point burst circle
+    // //banner
+    // login-page
+    .login
+      .container
+        .login-grids
+          .col-md-12.log
+            h3 ADMIN LOGIN
+            form(action='/adlogin' method='post')
+              h5 Email:
+              br
+              input.form-control(type='text' placeholder='Name' name="name")
+              br
+              h5 Password:
+              br
+              input.form-control(type='password' placeholder='Password' name="password")
+              br
+              input(type='submit', value='LOGIN')
+          
     // footer-top
     .footer-top
       .container
         .col-md-3.footer-grid
           h3
             a(href='#') Dabbawala
-        .col-md-3.footer-grid
-          h4 BUFFET
-          p
-            | MONDAY - THURSDAY
-            span 7 : 00 - 21 : 00
-        .col-md-3.footer-grid
-          h4 ORDERS
-          p
-            | MONDAY - SUNDAY
-            span 7 : 00 - 21 : 00
-        .col-md-3.footer-grid
+        
+        .col-md-3.footer-grid.footer-right
           h4 ADDRESS
           ul Flowers Street,Andheri.
             li.list-one 

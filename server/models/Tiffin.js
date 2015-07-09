@@ -5,16 +5,19 @@ var bcrypt= require('bcrypt-nodejs');
 
 //User Schema
 var tiffinSchema = new mongoose.Schema({
-  firstname: {type:String},
+  firstname: {type:String,required:true},
   lastname: {type:String},
-  email: { type: String, unique: true, lowercase: true },
-  password:{type:String},
-  address: {type:String},
-  mobile: {type:String},
-  type: String,
+  email: { type: String, unique: true, lowercase: true,required:true },
+  password:{type:String , required:true},
+  address: {type:String , required:true},
+  mobile: {type:String , required:true},
+  tiffinBarcode: {type:String},  //entered by admin manually directly in the databse
+  bagBarcode: {type:String},     //entered by admin manually directly in the databse
 
   resetPasswordToken: String,
-  resetPasswordExpires: Date  
+  resetPasswordExpires: Date ,
+  contacts: [{ type: mongoose.Schema.Types.ObjectId, ref:'Contact'}]
+  
 });
 /**
  * Password hash middleware.

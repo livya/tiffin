@@ -1,0 +1,67 @@
+html
+  head
+    title
+      | Dabbawala Service
+    // fonts
+    link(href='http://fonts.googleapis.com/css?family=Lato:100,300,400,700,900,100italic,300italic,400italic,700italic,900italic', rel='stylesheet', type='text/css')
+    link(href='http://fonts.googleapis.com/css?family=Slabo+27px', rel='stylesheet', type='text/css')
+    link(href='http://fonts.googleapis.com/css?family=Roboto+Slab:400,100,300,700', rel='stylesheet', type='text/css')
+    // //fonts
+    link(href='css/bootstrap.css', rel='stylesheet')
+    link(href='css/style.css', rel='stylesheet', type='text/css', media='all')
+    // for-mobile-apps
+    meta(name='viewport', content='width=device-width, initial-scale=1')
+    meta(http-equiv='Content-Type', content='text/html; charset=utf-8')
+    meta(name='keywords', content='Favorites Responsive web template, Bootstrap Web Templates, Flat Web Templates, Andriod Compatible web template, \
+    Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, SonyErricsson, Motorola web design')
+    script(type='application/x-javascript').
+      addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); }
+    // //for-mobile-apps
+    // js
+    script(type='text/javascript', src='js/jquery.min.js')
+    // js
+    
+    // start-smoth-scrolling
+    script(type='text/javascript', src='js/move-top.js')
+    script(type='text/javascript', src='js/easing.js')
+    script(type='text/javascript').
+      jQuery(document).ready(function($) {
+      $(".scroll").click(function(event){
+      event.preventDefault();
+      $('html,body').animate({scrollTop:$(this.hash).offset().top},1000);
+      });
+      });
+    // start-smoth-scrolling
+    script(src='//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js')
+    script.
+      // <![CDATA[
+      jQuery(document).ready(function($){
+      var from,to,subject,text;
+      $("#send_email").click(function(){
+      to=$("#to").val();
+      subject=$("#subject").val();
+      text=$("#content").val();
+      $("#message").text("Sending E-mail...Please wait");
+      $.get("localhost:3020/sendmail",{to:to,subject:subject,text:text},function(data){
+      if(data=="sent")
+      {
+      $("#message").empty().html("
+      Email is been sent at "+to+" . Please check inbox !
+      ");
+      }
+      });
+      });
+      });
+  body
+    #container
+      h1 Mailer In Node.JS
+      input#to(type='text', placeholder='Enter E-mail ID where you want to send')
+      input#subject(type='text', placeholder='Write Subject')
+      textarea#content(cols='40', rows='5', placeholder='Write what you want to send')
+      button#send_email Send Email
+      span#message
+
+    script(type="text/javascript", src="/vendor/jquery/dist/jquery.js")
+    script(type="text/javascript", src="/vendor/bootstrap/dist/js/bootstrap.js")
+    script(type="text/javascript", src="/vendor/toastr/toastr.min.js")
+
